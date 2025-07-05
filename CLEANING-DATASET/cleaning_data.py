@@ -74,12 +74,12 @@ for i, col in enumerate(cols_cat):
 plt.tight_layout()
 plt.show()
 
-# Optional: Correlation heatmap for numeric columns
+# Correlation heatmap for numeric columns
 plt.figure(figsize=(10, 8))
 sns.heatmap(data[cols_num].corr(), annot=True, cmap='coolwarm')
 plt.title("Correlation Matrix for Numeric Features")
 plt.show()
 
-# Optional: Save the cleaned dataset
+# Save the cleaned dataset
 data.to_csv('cleaned_dataset_banco.csv', index=False)
 print("\nCleaned dataset saved as 'cleaned_dataset_banco.csv'")
